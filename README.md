@@ -1,16 +1,87 @@
-# React + Vite
+# 🔐 Responsive Login & Signup Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive authentication UI built with **React (Vite)** featuring client-side validation, smooth transitions, and a clean user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+https://auth-page-pearl.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📁 Repository
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+https://github.com/AMRIsoja/auth-page
+
+---
+
+## ✨ Features
+
+- 🔐 Login and Signup forms
+- ✅ Full client-side validation
+- 👁️ Show / hide password toggle
+- ⚠️ Inline error messages per field
+- ⏳ Loading state on form submission
+- 🎬 Smooth fade/slide transitions between forms
+- 📱 Fully responsive (mobile + desktop)
+- ♿ Accessibility improvements (labels, aria attributes)
+- 🎨 Clean UI with CSS Modules
+
+---
+
+## 🧠 Validation Rules
+
+### Email
+- Must be valid email format
+
+### Password
+- Minimum 8 characters
+- At least 1 uppercase letter
+- At least 1 number
+
+### Username (Signup)
+- Minimum 3 characters
+
+### Confirm Password
+- Must match password
+
+---
+
+## 🛠️ Tech Stack
+
+- React (Vite)
+- JavaScript (ES6+)
+- CSS Modules
+- HTML5
+- Deployed on Vercel
+
+---
+
+## 📂 Project Structure
+src/
+├── components/
+│   ├── InputField.jsx
+│   ├── LoginForm.jsx
+│   └── SignupForm.jsx
+├── pages/
+│   └── AuthPage.jsx
+├── styles/
+│   ├── global.css
+│   ├── AuthPage.module.css
+│   ├── InputField.module.css
+│   └── LoginForm.module.css
+├── utils/
+│   └── validation.js
+├── App.jsx
+└── main.jsx
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+git clone https://github.com/AMRIsoja/auth-page.git
+cd auth-page
+npm install
+npm run dev
