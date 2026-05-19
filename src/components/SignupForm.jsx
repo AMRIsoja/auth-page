@@ -17,6 +17,23 @@ export default function SignupForm() {
     useState(false);
 
   const [loading, setLoading] = useState(false);
+  
+  const handleChange = (e) => {
+  const { name, value } = e.target;
+
+  setForm({
+    ...form,
+    [name]: value,
+  });
+
+  // Clear the error message for the field being edited
+  if (errors[name]) {
+    setErrors({
+      ...errors,
+      [name]: "",
+    });
+  }
+};
 
   const handleSubmit = async (e) => {
     e.preventDefault();
